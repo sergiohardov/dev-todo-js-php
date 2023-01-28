@@ -16,12 +16,10 @@ function db()
 function db_query($sql = '')
 {
     if (empty($sql)) return false;
-
     return db()->query($sql);
 }
 function db_exec($sql = '')
 {
     if (empty($sql)) return false;
-
     return db()->exec($sql);
 }

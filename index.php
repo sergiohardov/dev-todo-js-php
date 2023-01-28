@@ -1,5 +1,3 @@
-<?php require 'functions.php'; ?>
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -16,16 +14,13 @@
     <main class="todo">
         <div class="container">
             <h1 class="todo__title">Список Дел</h1>
-
             <form class="todo__form">
                 <input type="text" class="todo__form-input" placeholder="Нужно сделать...">
                 <button type="submit" class="todo__form-button btn btn-success">Отправить</button>
             </form>
-
             <ul class="todo__list"></ul>
         </div>
     </main>
-
     <script src="js/script.js"></script>
 </body>
 

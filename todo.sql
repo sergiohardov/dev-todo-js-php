@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.9.7
 -- https://www.phpmyadmin.net/
 --
--- Хост: 192.168.1.103:3306
--- Время создания: Янв 29 2023 г., 01:51
--- Версия сервера: 5.7.33
--- Версия PHP: 8.0.14
+-- Хост: localhost:3306
+-- Время создания: Янв 29 2023 г., 01:41
+-- Версия сервера: 10.6.11-MariaDB
+-- Версия PHP: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `todo_bd`
+-- База данных: `thelookw_todo`
 --
 
 -- --------------------------------------------------------
@@ -30,15 +31,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `tasks` (
   `id` int(10) UNSIGNED NOT NULL,
   `task` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
 --
 -- Дамп данных таблицы `tasks`
 --
 
 INSERT INTO `tasks` (`id`, `task`) VALUES
-(121, 'asdfasdf'),
-(127, 'asdf');
+(134, 'Task 1'),
+(135, 'Task 2'),
+(136, 'Task 3');
 
 --
 -- Индексы сохранённых таблиц
@@ -58,7 +60,7 @@ ALTER TABLE `tasks`
 -- AUTO_INCREMENT для таблицы `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
