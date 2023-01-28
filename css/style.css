@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #eff0f3;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+.btn {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
+  background: #d6d6d6;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #aeaeae;
+}
+.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+.btn-success:hover {
+  background: #218838;
+}
+.btn-danger {
+  background: #dc3545;
+  color: #fff;
+}
+.btn-danger:hover {
+  background: #c82333;
+}
+.todo__title {
+  text-align: center;
+}
+.todo__form {
+  background: #007bff;
+  border: 2px solid #0069d9;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.todo__form input {
+  width: 70%;
+  height: 100%;
+}
+.todo__form button {
+  width: 30%;
+}
+.todo__list {
+  padding: 0 10px;
+  list-style: none;
+}
+.todo__list li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.todo__list li:hover {
+  background: #d6d6d6;
+}
+.todo__list li span {
+  width: 75%;
+}
+.todo__list li a {
+  width: 25%;
+}
